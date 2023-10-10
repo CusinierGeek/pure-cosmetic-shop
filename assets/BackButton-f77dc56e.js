@@ -1,1 +1,0 @@
-import{d as t,J as c,o as a,c as n,f as s,e as _,h as r,I as u,_ as p}from"./index-001da166.js";const d={id:"btn_group"},B=t({__name:"BackButton",setup(f){const e=c(),o=()=>{e.go(-1)};return(i,b)=>(a(),n("div",d,[s("button",{onClick:o,type:"button"},[_(r(u),{icon:"ep:back",class:"icon"})])]))}});const l=p(B,[["__scopeId","data-v-bafb778f"]]);export{l as B};
