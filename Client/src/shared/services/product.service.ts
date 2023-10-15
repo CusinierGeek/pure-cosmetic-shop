@@ -1,6 +1,6 @@
 import axios from "axios";
 // Define the base URL for the API
-const BASE_URL = "https://pure-cosmetic.ca/api/products";
+const BASE_URL = "https://api.pure-cosmetic.ca/api/products";
 // const BASE_URL = "http://localhost:8080/api/products";
 
 // Function to fetch products from the API

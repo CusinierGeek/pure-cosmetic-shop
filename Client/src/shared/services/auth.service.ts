@@ -1,6 +1,6 @@
 import type { SigninFormInterface, UserInterface } from "@/shared/interfaces";
 import axios from "axios";
-const BASE_URL = "https://pure-cosmetic.ca/api/auth";
+const BASE_URL = "https://api.pure-cosmetic.ca/api/auth";
 // const BASE_URL = "http://localhost:8080/api/auth";
 
 export async function signIn(data: SigninFormInterface): Promise<UserInterface | null> {
