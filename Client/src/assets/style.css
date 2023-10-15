@@ -1,0 +1,28 @@
+
+
+
+:root{
+  --font-primary:#000000;
+  --font-secondary:#FFFF;
+  --primary:#ca9d89;
+  --secondary:#dcb9ada7;
+  --dark-primary:#ad7361;
+  --danger : #ff8888;
+  --success : #BCE29E;
+  --progress : #B8E8FC;
+  --primary-font: 'Barlow Condensed', sans-serif;
+  --secondary-font: 'Loved by the King', cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font);
+}
+
+.back-button {
+  position: absolute;
+    top: 4rem;
+    left: 1rem;
+}
