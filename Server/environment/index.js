@@ -10,6 +10,6 @@ const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.resolve(__dirname, "../.env.development") });
 
 export default () => {
-   process.env.NODE_ENV.trim() || "development";
+   process.env.NODE_ENV|| "development";
    const PORT = process.env.PORT || 5000;
 };
