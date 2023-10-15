@@ -1,7 +1,7 @@
 import axios from "axios";
 import { AddressInterface } from "@/shared/interfaces";
 
-const API_BASE_URL = "http://api.pure-cosmetic.ca/api/addresses";
+const API_BASE_URL = "https://api.pure-cosmetic.ca/api/addresses";
 // const API_BASE_URL = "http://localhost:8080/api/addresses";
 
 export const postAddress = async (userId: string, address: AddressInterface) => {
