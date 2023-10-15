@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const productSchema = new mongoose.Schema({
-  id: { type: String, required: true },
+  id: { type: Number, required: true },
   discount: {
     percent: { type: Number, default: 0 },
     end_date: { type: Date, default: null },

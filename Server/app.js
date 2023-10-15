@@ -10,7 +10,7 @@ import cors from "cors";
 
 app.use(
   cors({
-    origin:[ "https://pure-cosmetic.ca","http://localhost:5173"],
+    origin:[ "https://pure-cosmetic.ca","http://localhost:5173","http://pure-cosmetic.ca",],
     credentials: true, // Active les cookies et les en-têtes d'autorisation
   })
 );

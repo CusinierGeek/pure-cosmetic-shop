@@ -6,16 +6,21 @@ export const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
+      path: "/api",
+      name: "Api",
+      component: null,
+      children: []
+    },
+    {
       path: "/",
-      
       name: "Home",
       component: () => import("../views/Home.vue"),
     },
-    { 
-      path: "/products/detailed", 
-      name: "ProductDetailedList", 
+    {
+      path: "/products/detailed",
+      name: "ProductDetailedList",
       component: () => import("../views/Products.vue"),
-     },
+    },
     {
       path: "/products",
       name: "Products",
@@ -37,6 +42,7 @@ export const router = createRouter({
       beforeEnter: [isAuthenticatedGuard],
       component: () => import("../views/Profile.vue"),
     },
+
     {
       path: "/login",
       name: "Login",
@@ -67,7 +73,6 @@ export const router = createRouter({
       name: "NotFound",
       component: () => import("../views/NotFound.vue"),
     },
-
   ],
 });
 

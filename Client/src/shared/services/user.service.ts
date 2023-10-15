@@ -3,8 +3,8 @@ import axios from "axios";
 import { signIn } from ".";
 import { useCart } from "@/shared/stores";
 
-// const BASE_URL = "https://api.pure-cosmetic.ca/api/users";
-const BASE_URL = "http://localhost:8080/api/users";
+const BASE_URL = "https://pure-cosmetic.ca/api/users";
+// const BASE_URL = "http://localhost:8080/api/users";
 
 export async function createUser(partialUser: UserFormInterface): Promise<UserInterface | null> {
   const response = await axios.post(BASE_URL, partialUser, { withCredentials: true });

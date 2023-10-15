@@ -1,8 +1,8 @@
 import axios from "axios";
 import type { CardInterface } from "@/shared/interfaces";
 import { useUser } from "../stores";
-// const BASE_URL = "https://api.pure-cosmetic.ca/api/cards";
-const BASE_URL = "http://localhost:8080/api/cards";
+const BASE_URL = "https://pure-cosmetic.ca/api/cards";
+// const BASE_URL = "http://localhost:8080/api/cards";
 
 export async function addCard(card: CardInterface) {
   const userStore = useUser();
