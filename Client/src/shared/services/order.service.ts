@@ -2,7 +2,7 @@ import type { OrderInterface, OrderFormInterface, OrderHistoryInterface } from "
 
 import axios from "axios";
 
-const BASE_URL = "https://api.pure-cosmetic.ca/api/orders";
+const BASE_URL = "http://api.pure-cosmetic.ca/api/orders";
 // const BASE_URL = "http://localhost:8080/api/orders";
 
 export async function fetchOrders(customerId: string): Promise<OrderHistoryInterface[]> {
