@@ -14,7 +14,6 @@ const router = useRouter();
 
 onBeforeMount(async () => {
   await productsStore.fetchProducts();
-  // await userStore.fetchCurrentUser();
 });
 
 const userId = userStore.GetUser?._id;

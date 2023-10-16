@@ -91,6 +91,9 @@ export const useProducts = defineStore("products", {
         this.cachedProducts = this.products;
         this.totalProducts = data.totalProducts;
         this.sales = data.salesProducts;
+        if (data.salesProducts.length === 0) {
+          await this.generateSales(10);
+        }
       } catch (error) {
         console.error("Error fetching products:", error);
       }
